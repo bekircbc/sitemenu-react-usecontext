@@ -1,3 +1,3 @@
 export const PageRegister = () => {
-  return <>This is the welcome page.</>;
+  return <>This is the register page.</>;
 };

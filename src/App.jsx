@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import { PageWelcome } from "./components/PageWelcome";
 import { PageRegister } from "./components/PageRegister";
 import { PageLogin } from "./components/PageLogin";
@@ -10,20 +10,18 @@ function App() {
   const { siteTitle } = useContext(AppContext);
   return (
     <div className="App">
-      <div className="App">
-        <h1>{siteTitle}</h1>
-        <hr />
-        <NavLink to="/welcome">Welcome</NavLink> |{" "}
-        <NavLink to="/register">Register</NavLink> |{" "}
-        <NavLink to="/login">Login</NavLink>
-        <hr />
-        <Routes>
-          <Route path="/welcome" element={<PageWelcome />} />
-          <Route path="/register" element={<PageRegister />} />
-          <Route path="/login" element={<PageLogin />} />
-          <Route path="/" element={<Navigate to="/welcome" replace />} />
-        </Routes>
-      </div>
+      <h1>{siteTitle}</h1>
+      <hr />
+      <NavLink to="/welcome">Welcome</NavLink> |{" "}
+      <NavLink to="/register">Register</NavLink> |{" "}
+      <NavLink to="/login">Login</NavLink>
+      <hr />
+      <Routes>
+        <Route path="/welcome" element={<PageWelcome />} />
+        <Route path="/register" element={<PageRegister />} />
+        <Route path="/login" element={<PageLogin />} />
+        <Route path="/" element={<Navigate to="/welcome" replace />} />
+      </Routes>
     </div>
   );
 }
