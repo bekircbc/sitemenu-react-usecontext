@@ -10,7 +10,10 @@ function App() {
   const { siteTitle } = useContext(AppContext);
   return (
     <div className="App">
-      <h1>{siteTitle}</h1>
+      <div className="title">
+        <img src="images/icon.png" alt="logo" />
+        <h1>{siteTitle}</h1>
+      </div>
       <hr />
       <NavLink to="/welcome">Welcome</NavLink> |{" "}
       <NavLink to="/register">Register</NavLink> |{" "}
