@@ -1,8 +1,18 @@
 .App {
   text-align: center;
-  h1 {
-    color: black;
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    img {
+      width: 100px;
+    }
+    h1 {
+      color: black;
+    }
   }
+
   nav {
     background-color: #333;
     border-radius: 5px;
